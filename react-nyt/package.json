@@ -10,7 +10,9 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-router": "^4.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "homepage": "https://tapatterson.github.io/react-nyt/"
+    
   },
   "scripts": {
     "start": "react-scripts start",

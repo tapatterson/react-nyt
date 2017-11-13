@@ -13,6 +13,8 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(express.static('./public'));
 
+app.use(express.static(“client/build”));
+
 const PORT = process.env.PORT || 3000; 
 
 
@@ -77,6 +79,7 @@ app.delete('/api/saved/', function(req, res){
 app.get('/', function(req, res) {
   res.sendFile('./public/indexDesign.html');
 });
+
 
 app.listen(PORT, function() {
   console.log('App running on',PORT);
